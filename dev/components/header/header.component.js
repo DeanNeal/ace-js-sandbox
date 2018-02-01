@@ -8,9 +8,11 @@ import {UserService} from 'services/user.service';
     services: {
         userService: UserService
     },
-    props: {
-        user: {},
-        userService: {}
+    props: () => {
+        return {
+            user: {},
+            userService: {}
+        }
     }
 })
 

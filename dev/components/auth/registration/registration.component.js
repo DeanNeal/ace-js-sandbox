@@ -8,13 +8,15 @@ import {UserService} from 'services/user.service';
     services: {
         userService: UserService
     },
-    props: {
-        form: new FormGroup({
-            name: ['', [Validators.required]],
-            phone: ['', [Validators.required]],
-            password: ['', [Validators.required]],
-            password_confirm: ['', [Validators.required]]
-        })
+    props: () => {
+        return {        
+            form: new FormGroup({
+                name: ['', [Validators.required]],
+                phone: ['', [Validators.required]],
+                password: ['', [Validators.required]],
+                password_confirm: ['', [Validators.required]]
+            })
+        }
     }
 })
 

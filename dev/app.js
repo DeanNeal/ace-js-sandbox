@@ -2,7 +2,7 @@ import 'polyfils';
 import 'babel-polyfill'
 
 import Styles from 'styles/main.scss';
-import { Register, Controls } from 'ace-js';
+import { API, Controls } from 'ace-js';
 
 import { RootComponent } from './components/root/root.component';
 
@@ -40,7 +40,7 @@ import { AuthProtector } from './protectors/auth.protector';
 
 //route
 import { Routes } from 'router.js';
-Register({
+API.register({
     root: RootComponent,
     components: [
         AuthComponent,
@@ -70,7 +70,6 @@ Register({
         Services,
         AuthProtector
     ],
-    serverUrl: 'http://ace-js.zoom.od.ua',
     routes: Routes,
     styles: Styles
 });

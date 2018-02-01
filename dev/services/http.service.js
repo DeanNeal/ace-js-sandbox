@@ -1,4 +1,5 @@
 import { Http, ObservableModel, Decorators} from 'ace-js';
+const server = 'http://zoom.od.ua/';
 
 @Decorators.Inject({
 
@@ -10,19 +11,19 @@ export class HttpService {
 	}
 
 	get(url, params) {
-		return this.middleware(Http.get(url, params, this.getHeaders()));
+		return this.middleware(Http.get(server + url, params, this.getHeaders()));
 	}
 
 	post(url, params) {
-		return this.middleware(Http.post(url, params, this.getHeaders()));
+		return this.middleware(Http.post(server + url, params, this.getHeaders()));
 	}
 
 	put(url, params) {
-		return this.middleware(Http.put(url, params, this.getHeaders()));
+		return this.middleware(Http.put(server + url, params, this.getHeaders()));
 	}
 
 	delete(url, params) {
- 		return this.middleware(Http.detete(url, this.getHeaders()));
+ 		return this.middleware(Http.detete(server + url, this.getHeaders()));
 	}
 
 	// 

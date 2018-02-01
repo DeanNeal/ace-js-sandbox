@@ -8,11 +8,13 @@ import {UserService} from 'services/user.service';
     services: {
         userService: UserService
     },
-    props: {
-        form: new FormGroup({
-            phone: ['', [Validators.required/*, Validators.email*/]],
-            password: ['', [Validators.required]]
-        })
+    props: () => {
+        return {        
+            form: new FormGroup({
+                phone: ['', [Validators.required/*, Validators.email*/]],
+                password: ['', [Validators.required]]
+            })
+        }
     }
 })
 export class AuthComponent {

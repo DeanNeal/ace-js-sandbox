@@ -8,9 +8,11 @@ import {HttpService} from 'services/http.service';
     services: {
         http: HttpService
     },
-    props: {
-    	tableHeader: [{name: 'id'}, {name: 'name'}, {name: 'phone'}, {name: 'updated'}],
-        users: []
+    props: () => {
+        return {        
+        	tableHeader: [{name: 'id'}, {name: 'name'}, {name: 'phone'}, {name: 'updated'}],
+            users: []
+        }
     }
 })
 

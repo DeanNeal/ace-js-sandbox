@@ -5,7 +5,7 @@ export let Routes = [
     {path: '/', component: 'app-home', protector: AuthProtector},
     {path: 'auth', component: 'app-auth'},
     {path: 'registration', component: 'app-registration'},
-    {path: 'users', component: 'app-users', protector: AuthProtector},
+    {path: 'users', component: 'app-users'},
     // {path: 'fast-signup/:id', component: 'app-fast-signup'},
     // {path: 'remind', component: 'app-remind'},
 
