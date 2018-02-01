@@ -1,0 +1,33 @@
+.table {
+    width: 100%;
+    &-header {
+    	.table-row {
+    		background: none;
+    		border:none;
+    	}
+    }
+    &-body {}
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #ebebeb;
+        background: #f8f8f8;
+        height: 46px;
+        margin-top: 12px;
+        align-items: center;
+        padding: 0px 15px;
+        &:first-child {
+        	margin: 0;
+        }
+    }
+    &-col {
+
+    }
+
+    &.col_4 {
+    	.table-col {
+    		width: calc(100%/4);
+    	}
+    }
+}

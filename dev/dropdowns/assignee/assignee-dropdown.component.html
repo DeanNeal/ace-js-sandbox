@@ -1,0 +1,11 @@
+<div class="dropdown-container flex content--center" @click="openMenu" ac-outside="outside" style="position: relative;width: 100px;">
+    <div class="avatar pointer" style="background: url(assets/img/avatar.jpg)"></div>
+    <span class="pointer dropdown-value light-text" aria-hidden="true" ac-value="model.name">Assign</span>
+    <div class="dropdown" ac-class="open: this._show" style="    left: 0;top: 20px">
+        <ul>
+            <li ac-for="let item of assignees" @click="select(item)" ac-class="active: this.selected">
+                <a ac-value="name"></a>
+            </li>
+        </ul>
+    </div>
+</div>

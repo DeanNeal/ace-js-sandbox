@@ -1,0 +1,19 @@
+<main>
+    <h3 class="text-center">Users</h3>
+
+    <div class="table col_4">
+        <div class="table-header">
+            <div class="table-row">
+                <div class="table-col" ac-value="name" ac-for="let item of tableHeader"></div>
+            </div>
+        </div>
+        <div class="table-body">        
+            <div class="table-row" ac-for="let user of users">
+                <div class="table-col" ac-value="id"></div>
+                <div class="table-col" ac-value="name"></div>
+                <div class="table-col" ac-value="phone"></div>
+                <div class="table-col" ac-value="updated_at|date"></div>
+            </div>
+        </div>
+    </div>
+</main>

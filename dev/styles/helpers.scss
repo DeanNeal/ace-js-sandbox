@@ -1,0 +1,46 @@
+.content {
+  // .content--end
+  &--end {
+    justify-content: flex-end;
+  }
+
+  // .content--space-between
+  &--space-between {
+    justify-content: space-between;
+  }
+  &--center {
+    align-items: center;
+  }
+  &--flex-end{
+    justify-content: flex-end;
+  }
+}
+
+.m-t-10{
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.input-file {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.app-container {
+  width: 1024px;
+  margin: 0 auto;
+  @media (max-width: 1280px) {
+      width: auto;
+  }
+}

@@ -1,0 +1,13 @@
+app-home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  .app-home {
+    &__bottom {
+      margin-top: 90px;
+    }
+  }
+}

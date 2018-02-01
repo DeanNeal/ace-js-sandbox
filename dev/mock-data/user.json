@@ -1,0 +1,32 @@
+{
+  "data": {
+    "_id": "59a3cbf963b8d77bb1078000",
+    "role": {
+      "_id": "587c6ca189eb5e52a6946da5",
+      "name": "developer",
+      "__v": 8,
+      "resources": [
+        {
+          "name": "user",
+          "access": 3
+        },
+        {
+          "name": "role",
+          "access": 1
+        }
+      ]
+    },
+    "username": "dean_neal",
+    "email": "venomsunset@gmail.com",
+    "avatar": "/assets/img/avatar.jpg",
+    "updated": "2017-09-05T14:49:23.635Z",
+    "created": "2017-08-28T07:53:29.580Z",
+    "active": true
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "/catalog/auth/users/59a3cbf963b8d77bb1078000"
+    }
+  ]
+}

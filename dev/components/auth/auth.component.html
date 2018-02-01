@@ -1,0 +1,44 @@
+<main style="    width: 20%;min-width: 300px;">
+    <h3 class="text-center">Sign in</h3>
+
+    <form class="app-form" @submit="submit" ac-form-group="form">
+<!--         <div class="app-form__row" ac-for="let field of fields">
+            <label class="app-form__label">
+                <div class="app-form__label__input"> 
+                    <input required type="text" ac-attr="placeholder: name" ac-model="field.value"/>
+                    <div class="app-form__border"></div> 
+                </div>
+            </label>
+        </div> -->
+
+        <div class="app-form__row">
+            <label class="app-form__label">
+                <div class="app-form__label__input">
+                    <input required type="text" placeholder="Phone" ac-form-control="phone" />
+                    <div class="app-form__border"></div>
+                    <span class="invalid-message" ac-if="this.form.controls.phone.errors.required">Field can not be empty</span>
+                    <!-- <span class="invalid-message" ac-if="this.form.controls.phone.errors.phone">Invalid format</span> -->
+                </div>
+            </label>
+        </div>
+
+        <div class="app-form__row">
+            <label class="app-form__label">
+                <div class="app-form__label__input">
+                    <input required type="text" placeholder="Password" ac-form-control="password" />
+                    <div class="app-form__border"></div>
+                    <span class="invalid-message" ac-if="this.form.controls.password.errors.required">Field can not be empty</span>
+                    <!-- <span class="invalid-message" ac-if="this.form.controls.phone.errors.phone">Invalid format</span> -->
+                </div>
+            </label>
+        </div>
+
+
+        <div class="app-form__row" style="    justify-content: center;">
+            <!-- <a ac-link="remind">Forgot password?</a> -->
+            <button type="submit" class="app-btn">Submit</button>
+        </div>
+    </form>
+    <!-- <div class="text-center">New to the system?</div> -->
+    <div class="text-center text-underline"><a ac-link="registration">Create an account</a></div>
+</main>

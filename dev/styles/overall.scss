@@ -1,0 +1,80 @@
+$step: 2;
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+.m-60-auto {
+    margin: $step * 15 auto;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+// .mt-4       {    margin-top: $step * 1px;      }
+// .mt-8       {    margin-top: $step * 2px;      }
+// .mt-12      {    margin-top: $step * 3px;      }
+// .mt-16      {    margin-top: $step * 4px;      }
+// .mt-20      {    margin-top: $step * 5px;      }
+// .mt-24      {    margin-top: $step * 6px;      }
+// .mt-28      {    margin-top: $step * 7px;      }
+// .mt-32      {    margin-top: $step * 8px;      }
+// .mt-48      {    margin-top: $step * 12px;     }
+// .mt-64      {    margin-top: $step * 16px;     }
+// .mb-4       {    margin-bottom: $step * 1px;   }
+// .mb-8       {    margin-bottom: $step * 2px;   }
+// .mb-12      {    margin-bottom: $step * 3px;   }
+// .mb-16      {    margin-bottom: $step * 4px;   }
+// .mb-20      {    margin-bottom: $step * 5px;   }
+// .mb-24      {    margin-bottom: $step * 6px;   }
+// .mb-28      {    margin-bottom: $step * 7px;   }
+// .mb-32      {    margin-bottom: $step * 8px;   }
+// .mb-48      {    margin-bottom: $step * 12px;  }
+// .mb-64      {    margin-bottom: $step * 16px;  }
+.relative {
+    position: relative;
+}
+
+.red {
+    color: $c-red;
+}
+
+.green {
+    color: $c-green;
+}
+
+.black {
+    color: $c-text;
+}
+
+.light-text {
+    color: #aaa;
+}

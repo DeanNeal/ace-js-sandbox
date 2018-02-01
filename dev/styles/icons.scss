@@ -1,0 +1,40 @@
+.icon {
+    display: inline-block;
+    transition: 0.3s;
+    &.help {
+        width: 22px;
+        height: 22px;
+        background: url(../assets/img/help-icon.png) no-repeat;
+    }
+    &.sign-out {
+        width: 23px;
+        height: 23px;
+        background: url(../assets/img/sign-out-icon.png) no-repeat;
+    }
+    &.settings {
+        width: 23px;
+        height: 23px;
+        background: url(../assets/img/settings-icon.png) no-repeat;
+    }
+    &.down-arrow {
+        width: 10px;
+        height: 5px;
+        background: url(../assets/img/down-arrow.png) no-repeat;
+    }
+    &.up-arrow {
+        width: 10px;
+        height: 5px;
+        background: url(../assets/img/down-arrow.png) no-repeat;
+        transform: rotate(180deg);
+    }
+    &.grid-btn {
+        width: 15px;
+        height: 15px;
+        background: url(../assets/img/grid.png) no-repeat;
+    }
+    &.three-points-btn {
+        width: 15px;
+        height: 15px;
+        background: url(../assets/img/three-points.png) no-repeat 0px 6px;
+    }
+}

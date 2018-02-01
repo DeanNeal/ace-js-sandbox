@@ -1,0 +1,41 @@
+.app-btn {
+    padding: 7px 10px;
+    background: $c-blue;
+    color: $c-white;
+    cursor: pointer;
+    border: none;
+    position: relative;
+
+    -webkit-clip-path: polygon(100% 0, 100% calc(100% - 10.0px), calc(100% - 10.0px) 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% calc(100% - 10.0px), calc(100% - 10.0px) 100%, 0 100%, 0 0);
+    &.small {
+        width: 150px;
+    }
+    input[type='file'] {
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    &:hover {
+        background: darken($c-blue, 15%);
+    }
+}
+.show-all-btn{
+    width: 100%;
+    border: none;
+    display: block;
+    font-size: 12px;
+    padding: 8px;
+    color: $c-link;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        background: #efefef;
+    }
+}

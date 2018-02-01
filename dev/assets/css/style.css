@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    // font-family: 'Open Sans';
+    line-height: 1.2;
+    font-size: 14px;
+    color: #000000;
+}
+
+i {
+    cursor: pointer;
+}
+
+route-switcher, child-route-switcher{
+    display: block;
+    height: calc(100% - 60px);
+}
+
+gantt--scale {
+    width: 100%;
+}
+
+.container {
+    padding: 2%;
+    min-height: calc(100% - 140px);
+    overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.cursor-auto{
+    cursor: auto;
+}
+
+.form-control {
+    margin: 10px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+<header>
+    <div class="navigation">
+        <a class="main-logo" ac-link="/">
+            Home page
+            <!-- <img src="../../assets/img/logo.png" alt="logo"> -->
+        </a>
+        <ul class="gantt--main-menu" ac-if="this.userService.isLogged()">
+            <li><a class="gantt--main-menu-item" ac-link="profile">Profile</a></li>
+            <li><a class="gantt--main-menu-item" ac-link="users">Users</a></li>
+        </ul>
+    </div>
+    <div class="right-menu" ac-if="this.userService.isLogged()">
+        <div ac-value="user.name" class="mr-20"></div>
+
+        <div class="search-input relative">
+            <ul>
+                <li><a class="gantt--main-menu-item" @click="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

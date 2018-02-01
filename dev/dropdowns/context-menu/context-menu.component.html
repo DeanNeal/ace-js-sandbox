@@ -1,0 +1,9 @@
+<div ac-outside="outside" @click="openMenu" class="dropdown-container">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+    <div class="dropdown" ac-class="open: this._show">
+        <ul>
+            <li @click="edit"><a>Edit</a></li>
+            <li @click="delete"><a>Delete</a></li>
+        </ul>
+    </div>
+</div>
